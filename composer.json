@@ -1,0 +1,19 @@
+{
+    "name": "attache/sbi",
+    "authors": [
+        {
+            "name": "Attache",
+            "email": "attacheaka66@gmail.com"
+        }
+    ],
+
+    "autoload": {
+
+    	"psr-4":{
+    		"App\\": "app/"
+    	}
+    	
+    },
+
+    "require": {}
+}
