@@ -36,7 +36,7 @@
 
            if ($string =='OptionModifier') {
   
-                      $ajHtml = "<a href=modifier>  <i class=\"fas fa-book fa-md\"></i> </a> ";
+                      $ajHtml = "<a href=modifier_patient&p=".$datas->id.">  <i class=\"fas fa-book fa-md\"></i> </a> ";
 
              
            }elseif ($string =='OptionVoir'){
