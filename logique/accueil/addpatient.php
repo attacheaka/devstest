@@ -1,5 +1,6 @@
 <?php
 
+
 if (isset($_POST['addpatient'])) {
 	
 	extract($_POST);
@@ -11,6 +12,7 @@ if (isset($_POST['addpatient'])) {
 
    $req = $bd->prepare('SELECT numero_piece_identite FROM patient WHERE numero_piece_identite = ?');
    $req->execute([$numero_piece_identite]);
+   clear_input_data('add_patient');
 
     
 

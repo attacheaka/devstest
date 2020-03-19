@@ -14,4 +14,7 @@ if (isset($_GET['p'])) {
        $query->execute([$_GET['p']]);
        $datapatient=$query->fetch();
 
+ $ajHtmlModif = OptionTopic("OptionModifier",$datapatient); 
+ $ajHtmlSup = OptionTopic("OptionSup",$datapatient);  
 }
+

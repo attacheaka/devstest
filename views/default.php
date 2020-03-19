@@ -22,7 +22,7 @@
 
 
 <body id="page-top" style="background-color: #f8f9fc;">
-        
+  <a href="accueil" class="btn btn-secondary"> Home</a>
     <?= $content ?>
    
 </body>

@@ -1,5 +1,6 @@
 <?php
 if (isset($_GET['p'])) {
+  
  
  $_GET['p'] = (int) $_GET['p'];
 
@@ -10,6 +11,9 @@ if (isset($_GET['p'])) {
    $req = $bd->prepare('SELECT * FROM patient WHERE id = ?');
    $req->execute([$_GET['p']]);
    $data_patient = $req->fetch();
+
+    $ajHtmlVoir = OptionTopic("OptionVoir",$data_patient); 
+    $ajHtmlSup = OptionTopic("OptionSup",$data_patient);
 
 }
 

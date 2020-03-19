@@ -9,6 +9,10 @@
       <th scope="col"> </th>
    
     </tr>
+    <tr> 
+      <?= $ajHtmlVoir ?>
+      <?= $ajHtmlSup ?>
+    </tr>
   </thead>
   <tbody>
 
