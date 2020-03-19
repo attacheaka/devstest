@@ -35,6 +35,13 @@ switch ($p) {
           require ROOT.'/logique/accueil/patient.php';
           require ROOT.'/views/accueil/patient.php';
       break;
+      
+
+      case 'addpatient':
+          
+          require ROOT.'/logique/accueil/addpatient.php';
+          require ROOT.'/views/accueil/addpatient.php';
+      break;
 
       case 'delete':
           require ROOT.'/logique/accueil/delete.php';

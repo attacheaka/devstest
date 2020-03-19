@@ -1,16 +1,37 @@
 <?php
 
+ //  fonctionn pour enregistrer les donnees dans les inputs 
 
-    	function e($string){
-    		if($string){
-    			return htmlspecialchars($string);
-    		}
-    	}
+    if (!function_exists('save_input_data')) {
+                function save_input_data($name,$data){
+                    $_SESSION[$name] = $data;
+                }
+            }
+
+
+    if (!function_exists('get_input')) {
+                function get_input($name,$key){                  
+                    return !empty($_SESSION[$name][$key]) 
+                    ? $_SESSION[$name][$key] 
+                    : ' ';
+                }
+            }
+
+ 
+
+ if (!function_exists('clear_input_data')) {
+                    function clear_input_data($name){
+                        if (isset($_SESSION[$name])) {
+                             $_SESSION[$name] = [] ;
+                            
+                        }
+                    }
+                }
 
 
 // 
 
-       function OptionTopic($string, $datas=null){
+  function OptionTopic($string, $datas=null){
 
 
            if ($string =='OptionModifier') {
