@@ -26,10 +26,24 @@ switch ($p) {
           require ROOT.'/views/accueil/index.php';
       break;
 
-
-      case 'mise_a_jour':
+      case 'accueil':
           require ROOT.'/logique/accueil/index.php';
           require ROOT.'/views/accueil/index.php';
+      break;
+
+      case 'patient':
+          require ROOT.'/logique/accueil/patient.php';
+          require ROOT.'/views/accueil/patient.php';
+      break;
+
+      case 'delete':
+          require ROOT.'/logique/accueil/delete.php';
+      break;
+
+
+      case 'update':
+          require ROOT.'/logique/accueil/modifier_patient.php';
+          require ROOT.'/views/accueil/modifier_patient.php';
       break;
       
    

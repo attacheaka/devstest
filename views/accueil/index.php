@@ -2,9 +2,12 @@
 <div class="container-fluid">
 	<h2>Listes des partients </h2><br>
 
+<a href='addpatient' class='btn btn-primary'> Ajouter un patient </a> <br><br>
 
 <table class="table table-hover shadow" style="border:2px solid #4e73df;">
+
   <thead>
+
     <tr class="btn-primary">
       <th scope="col">Numéro pièce identité</th>
       <th scope="col"> nom </th>
@@ -37,12 +40,13 @@
         <?= $ajHtmlVoir ?>
         <?= $ajHtmlSup ?>
     </td>
-    </tr>
- <?php
+    <?php
     } }else{
-    	  echo "Aucune donnée enregistré";
+        echo "<td> Aucune donnée enregistrée  </td>";
     }
- ?>
+    ?>
+    </tr>
+ 
 
   </tbody>
 </table> 
